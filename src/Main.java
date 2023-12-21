@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int temp = 0;
+        
+        int temp = 0; Scanner scanner = new Scanner(System.in);
         System.out.println("Hello world!");
 
         // 0 задача
         System.out.print("Введите имя пользователя: ");
-        Scanner scanner = new Scanner(System.in);
         String username = scanner.nextLine();
         System.out.println("Hello " + username);
 
@@ -29,7 +29,6 @@ public class Main {
         }
         temp = 0;
 
-
         // 3 задача
         while (temp == 0) {
             System.out.println("Введите трехзначное число: ");
@@ -44,7 +43,6 @@ public class Main {
             }
         }
 
-
         // 4 задача
         System.out.println("Введи действительное число: "); float v = scanner.nextFloat();
         System.out.println("Округленное число равно: " + Math.round(v));
@@ -53,7 +51,7 @@ public class Main {
         System.out.println("Введи число q: "); double z = scanner.nextDouble();
         System.out.println("Введи число w: "); double w = scanner.nextDouble();
         int integer = (int) Math.floor(z/w); int fl = (int) (z - w*integer);
-        System.out.println("Отношение чисел равно " + integer+ " целых и " + fl + " в остатке");
+        System.out.println("Отношение чисел равно " + integer + " целых и " + fl + " в остатке");
 
         // 6 задача
         System.out.println("Введи число а: "); int a = scanner.nextInt();
@@ -61,6 +59,7 @@ public class Main {
         //int t = a; a = b1; b1 = t;
         a += b1; b1 -= a; b1 = -b1; a -= b1;
         System.out.println("Число а равно " + a);
-        System.out.println("Число b равно "+ b1);
+        System.out.println("Число b равно " + b1);
+        
     }
 }
